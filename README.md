@@ -1,5 +1,9 @@
 # Tetris-Game | Ian Jacobs
 
+## Built Using
+
+This is my attempt to build a Tetris Clone using strictly HTML5, CSS3 and JavaScript.
+
 [Live Demo](https://ihjacobs925.github.io/Tetris-Game/)
 
 ## How to Play
