@@ -1,6 +1,6 @@
 # Tetris-Game | Ian Jacobs
 
-[Live Demo]()
+[Live Demo](https://ihjacobs925.github.io/Tetris-Game/)
 
 ## How to Play
 
