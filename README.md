@@ -13,7 +13,7 @@ This is my attempt to build a Tetris Clone using strictly HTML5, CSS3 and JavaSc
 3. To soft drop the piece, use the down arrow key.
 4. To rotate the piece, use the up arrow key.
 5. Mobile gameplay is not optimized as of this moment, but on devices less than 768px,
-4 buttons will appear to control the piece. Button are marked by arrows pointing left, right, down and clockwise.
+4 buttons will appear to control the piece. The buttons are marked by arrows pointing left, right, down and clockwise.
 6. Other buttons included and can be found on the panel are pause/play and restart.
 
 ### Scores | Levels
