@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris | Ian Jacobs</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/solid.css"
+      integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/fontawesome.css"
+      integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./Style/style.css" />
+</head>
+<body>
+    <main>
+        <section class="game-board">
+            <canvas id="game" width="200" height="400"></canvas>
+            <p id="message" class="hidden">Game Over!</p>
+        </section>
+
+        <section class="panel-box">
+            <div class="next-box">
+              <canvas id="next" width="80" height="80"></canvas>
+            </div>
+    
+            <div class="score-box">
+              <span>High Score:</span>
+              <p>
+                <span id="high-score-span">56789</span>
+              </p>
+              <span>Score:</span>
+              <p><span id="score-span">12340</span></p>
+            </div>
+    
+            <div class="line-box">
+              <span>Lines:</span>
+              <p><span id="lines-span">0</span></p>
+              <span>Level:</span>
+              <p><span id="level-span">1</span></p>
+            </div>
+    
+            <div class="button-box">
+              <div id="pause-button" tooltip="Pause">
+                <i class="fas fa-pause"></i>
+              </div>
+              <div id="restart-button" tooltip="Restart">
+                <i class="fas fa-undo"></i>
+              </div>
+              <div id="info-button" tooltip="Info">
+                <i class="fas fa-info"></i>
+              </div>
+            </div>
+          </section>
+    </main>
+    <section class="mobile-control">
+        <div id="left-button"><i class="fas fa-arrow-left"></i></div>
+        <div id="right-button">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+        <div id="down-button"><i class="fas fa-arrow-down"></i></div>
+        <div id="rotate-button"><i class="fas fa-sync"></i></div>
+      </section>
+
+      <sript src="./JS/app.js"></sript>
+</body>
+</html>
