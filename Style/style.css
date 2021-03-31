@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    background-color: #bbb;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  main {
+    border: 0.2em solid black;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 2em auto 1em;
+    background-color: #2e3131;
+  
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  /* Game Box --------------------------------------- */
+  .game-box {
+    /* background-color: green; */
+    height: 100%;
+    padding: 15px 10px;
+    width: 55%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .game-box #game {
+    height: 100%;
+    padding: 0.3em;
+    border: 0.2em solid white;
+    border-radius: 5px;
+  }
+  
+  #message {
+    border: 0.2rem solid black;
+    border-radius: 5px;
+    width: 170px;
+    height: 40px;
+  
+    position: absolute;
+    top: 33.5%;
+    left: 14.25%;
+  
+    font-family: "Press Start 2P", cursive;
+    background-color: #2e3131;
+    color: white;
+    font-size: 1rem;
+    line-height: 35px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Panel Box -------------------------------------- */
+  .panel-box {
+    /* background-color: blue; */
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    padding: 15px 0;
+  }
+  
+  .next-box {
+    border: 0.2em solid white;
+    background-color: #2e3131;
+    border-radius: 5px;
+    padding: 0.3em;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+  }
+  
+  .next-box #next {
+    width: 75px;
+  }
+  
+  /* Scores ----------------------------------------- */
+  .score-box,
+  .line-box {
+    border: 1px solid black;
+    width: 90%;
+    max-width: 190px;
+    height: 100px;
+    margin: 5px 0 5px;
+    padding: 5px;
+  
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+  
+    font-family: "Press Start 2P", cursive;
+    font-size: 0.7rem;
+    letter-spacing: 0.8px;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+  }
+  
+  .score-box p,
+  .line-box p {
+    text-align: right;
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+  }
+  
+  .blinking {
+    animation: blinking 0.9s linear infinite;
+  }
+  
+  @keyframes blinking {
+    90% {
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+  
+  /* Button Box ------------------------------------- */
+  .button-box {
+    width: 90%;
+    height: 27%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button-box div {
+    width: 80px;
+    height: 50px;
+    border: 0.18em solid black;
+    border-radius: 10px;
+    margin-bottom: 8px;
+  
+    cursor: pointer;
+    background-color: #ff6347;
+    box-shadow: 0 6px #999;
+    justify-self: center;
+    text-align: center;
+  }
+  
+  .button-box div:active {
+    box-shadow: 0 3px #999;
+    transform: translateY(3px);
+  }
+  
+  .button-box i {
+    display: inline-block;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  
+  /* Tool Tip --------------------------------------- */
+  /* from http://jsfiddle.net/AndreaLigios/jtLbpy62/  */
+  
+  [tooltip]:before {
+    content: attr(tooltip);
+    position: absolute;
+    opacity: 0;
+  
+    transition: all 0.15s ease;
+    padding: 5px;
+    color: #222;
+    border-radius: 10px;
+  }
+  [tooltip]:hover:before {
+    opacity: 1;
+  
+    background: #38a1f3;
+    margin-top: -20px;
+    margin-left: 10px;
+  }
+  
+  /* Mobile Control --------------------------------- */
+  .mobile-control {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .mobile-control div {
+    border: 0.2em solid black;
+    border-radius: 10px;
+    width: 23%;
+    height: 50px;
+    text-align: center;
+  
+    background-color: goldenrod;
+    box-shadow: 0 6px #999;
+  }
+  
+  .mobile-control div:active {
+    box-shadow: 0 3px #999;
+    transform: translateY(3px);
+  }
+  
+  .mobile-control i {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 43px;
+  }
+  
+  /* Media Queries ---------------------------------- */
+  @media screen and (min-width: 768px) {
+    main {
+      width: 600px;
+      height: 500px;
+      padding: 20px;
+    }
+    .game-box {
+      padding: 0;
+    }
+    #message {
+      width: 200px;
+      height: 40px;
+  
+      position: absolute;
+      top: 33.5%;
+      left: 17.5%;
+  
+      font-size: 1.2rem;
+      line-height: 35px;
+    }
+  
+    .next-box {
+      width: 95px;
+      height: 95px;
+    }
+    .next-box #next {
+      width: 80px;
+    }
+  
+    .score-box,
+    .line-box {
+      margin-top: 10px;
+      font-size: 0.8em;
+      line-height: 1.7em;
+    }
+  
+    .button-box {
+      margin-top: auto;
+      display: flex;
+      height: 50px;
+      margin-right: 10px;
+    }
+  
+    .button-box div {
+      margin-right: 12px;
+    }
+  }
+  
+  @media screen and (min-width: 769px) {
+    .mobile-control {
+      visibility: hidden;
+    }
+  }
+  
